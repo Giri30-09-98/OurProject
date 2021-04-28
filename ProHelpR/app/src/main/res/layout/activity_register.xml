@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#03A9F4"
+            android:fontFamily="serif"
+            android:gravity="center"
+            android:text="P r o H e l p R   Register"
+            android:textColor="#FFFFFF"
+            android:textSize="30sp" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:background="@drawable/button_shape"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/workerregiser"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:fontFamily="serif"
+                android:text="Worker"
+                android:textColor="#3F51B5"
+                android:textSize="25sp" />
+
+            <RadioButton
+                android:id="@+id/userregister"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:fontFamily="serif"
+                android:text="User"
+                android:textColor="#F44336"
+                android:textSize="25sp" />
+        </RadioGroup>
+
+
+        <LinearLayout
+            android:id="@+id/registerworkerview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_shape"
+            android:orientation="vertical"
+            android:layout_marginTop="20dp"
+            android:padding="5dp"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Enter Worker Details"
+                android:gravity="center"
+                android:textSize="20sp"
+                android:background="#673AB7"
+                android:textColor="#FFFFFF"
+                android:fontFamily="serif"
+                android:textAllCaps="true"/>
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15sp"
+                android:background="@android:color/white"
+                android:hint="Enter Worker Name">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/worker_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:singleLine="true" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15sp"
+                android:background="@android:color/white"
+                android:hint="Enter Worker Mail Id">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/worker_mail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:singleLine="true" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15sp"
+                android:background="@android:color/white"
+                android:hint="Enter Worker Mobile Number">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/worker_mobile_number"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:singleLine="true" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15sp"
+                android:background="@android:color/white"
+                android:hint="Enter Worker Password">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/worker_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:singleLine="true" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15sp"
+                android:background="@android:color/white"
+                android:hint="Enter Worker Category">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/worker_category"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:singleLine="true" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/save_worker"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_weight="5"
+                android:text="Save Worker"
+                android:onClick="saveWorker"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:fontFamily="serif"
+                android:backgroundTint="#04A10A"
+                android:textColor="#FFFFFF"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/userregisteryview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_shape"
+            android:orientation="vertical"
+            android:layout_marginTop="20dp"
+            android:padding="5dp"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Enter User Details"
+                android:gravity="center"
+                android:textSize="20sp"
+                android:background="#7E5F04"
+                android:textColor="#FFFFFF"
+                android:fontFamily="serif"
+                android:textAllCaps="true"/>
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15sp"
+                android:background="@android:color/white"
+                android:hint="Enter User Name">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/user_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:singleLine="true" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15sp"
+                android:background="@android:color/white"
+                android:hint="Enter User Mail Id">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/user_mail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:singleLine="true" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15sp"
+                android:background="@android:color/white"
+                android:hint="Enter User Mobile Number">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/worker_user_number"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:singleLine="true" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15sp"
+                android:background="@android:color/white"
+                android:hint="Enter User Password">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/user_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:singleLine="true" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/save_user"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_weight="5"
+                android:text="Save User"
+                android:onClick="saveUser"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:fontFamily="serif"
+                android:backgroundTint="#04A10A"
+                android:textColor="#FFFFFF"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>
