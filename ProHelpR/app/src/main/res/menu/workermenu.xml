@@ -3,7 +3,8 @@
 
 
     <item
-        android:title="Bookings"/>
+        android:title="Bookings"
+        android:id="@+id/w_bookings"/>
 
     <item
         android:title="Home"
