@@ -5,7 +5,7 @@
         android:title="Home"
         android:id="@+id/w_home"/>
     <item
-        android:title="Category"
+        android:title="Bookings"
         android:id="@+id/w_category"/>
     <item
         android:title="Profile"
