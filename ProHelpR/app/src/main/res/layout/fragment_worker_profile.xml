@@ -6,12 +6,198 @@
     tools:context=".workers.WorkerProfileFragment">
 
     <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="Worker Profile"
-        android:gravity="center"
-        android:textSize="30dp"
-        />
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:background="@drawable/worker"
+                android:foregroundGravity="center" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Welcome To ProHelpR"
+                android:fontFamily="serif"
+                android:textColor="@color/colorPrimaryDark"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/roledefine"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Your Role Is : "
+                android:fontFamily="serif"
+                android:textColor="#BF360C"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/mobileNumber"
+                android:layout_width="280dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:text="Number"
+                android:fontFamily="serif"
+                android:textColor="#277E02" />
+
+            <Button
+                android:id="@+id/buttonLogout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="LOGOUT"
+                android:backgroundTint="#FF6F00"
+                android:textColor="@android:color/white" />
+
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <LinearLayout
+            android:id="@+id/registerworkerview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/button_shape"
+            android:orientation="vertical"
+            android:padding="5dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#0D47A1"
+                android:fontFamily="serif"
+                android:gravity="center"
+                android:text="Enter Worker Details"
+                android:textAllCaps="true"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15sp"
+                android:background="@android:color/white"
+                android:hint="Enter Role">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/role_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:singleLine="true" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15sp"
+                android:background="@android:color/white"
+                android:hint="Enter Worker Name">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/worker_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:singleLine="true" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15sp"
+                android:background="@android:color/white"
+                android:hint="Enter Worker Mail Id">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/worker_mail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:singleLine="true" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15sp"
+                android:background="@android:color/white"
+                android:hint="Enter Worker Mobile Number">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/worker_mobile_number"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:singleLine="true" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15sp"
+                android:background="@android:color/white"
+                android:hint="Enter Worker Category">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/worker_category"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:singleLine="true" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15sp"
+                android:background="@android:color/white"
+                android:hint="Enter Worker Adress">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/worker_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:singleLine="true" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/save_worker"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_weight="5"
+                android:backgroundTint="#04A10A"
+                android:fontFamily="serif"
+                android:text="Save Worker"
+                android:textColor="#FFFFFF"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
 
 </FrameLayout>

@@ -2,8 +2,42 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
     android:background="@android:color/white"
-    android:fitsSystemWindows="true">
+    android:fitsSystemWindows="true"
+    tools:context=".auth.MainActivity">
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/button_shape"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:id="@+id/roles">
+
+        <RadioButton
+            android:id="@+id/workerregiser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:fontFamily="serif"
+            android:text="Worker"
+            android:textColor="#3F51B5"
+            android:textSize="25sp" />
+
+        <RadioButton
+            android:id="@+id/userregister"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:fontFamily="serif"
+            android:text="User"
+            android:textColor="#F44336"
+            android:textSize="25sp" />
+    </RadioGroup>
 
     <LinearLayout
         android:layout_width="wrap_content"
@@ -80,6 +114,13 @@
             android:background="@drawable/btn_rounded_red"
             android:text="CONTINUE"
             android:textColor="@android:color/white" />
+       <!-- <Button
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_rounded_red"
+            android:text="Text"
+            android:onClick="Continue"
+            android:textColor="@android:color/white" />-->
 
     </LinearLayout>
 

@@ -3,16 +3,21 @@
 
 
     <item
-        android:title="Bookings"
-        android:id="@+id/w_bookings"/>
+        android:id="@+id/w_bookings"
+        android:icon="@drawable/ic_baseline_person_24"
+        android:title="Bookings" />
 
     <item
+        android:id="@+id/w_home"
+        android:icon="@drawable/ic_baseline_person_24"
         android:title="Home"
-        android:id="@+id/w_home"/>
+        />
     <item
-        android:title="Category"
-        android:id="@+id/w_category"/>
+        android:id="@+id/w_category"
+        android:icon="@drawable/ic_baseline_person_24"
+        android:title="Category" />
     <item
-        android:title="Profile"
-        android:id="@+id/w_profile"/>
+        android:id="@+id/w_profile"
+        android:icon="@drawable/ic_baseline_person_24"
+        android:title="Profile" />
 </menu>
