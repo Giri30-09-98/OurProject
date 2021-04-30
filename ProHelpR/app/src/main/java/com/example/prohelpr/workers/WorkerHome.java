@@ -41,11 +41,7 @@ public class WorkerHome extends AppCompatActivity {
                     loadFragment(fragment);
                     // toolbar.setTitle("My Gifts");
                     return true;
-                case R.id.w_category:
-                    fragment = new WorkerCategoryFragment();
-                    loadFragment(fragment);
-                    // toolbar.setTitle("Cart");
-                    return true;
+
                 case R.id.w_profile:
                     fragment = new WorkerProfileFragment();
                     loadFragment(fragment);

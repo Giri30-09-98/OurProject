@@ -108,10 +108,10 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="15sp"
                     android:background="@android:color/white"
-                    android:hint="Enter User Mail Id">
+                    android:hint="Enter User Address">
 
                     <com.google.android.material.textfield.TextInputEditText
-                        android:id="@+id/user_mail"
+                        android:id="@+id/user_address"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="5dp"
@@ -124,7 +124,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="15sp"
                     android:background="@android:color/white"
-                    android:hint="Enter User Mobile Number">
+                    android:hint="Enter User Alternate Mobile Number">
 
                     <com.google.android.material.textfield.TextInputEditText
                         android:id="@+id/worker_user_number"

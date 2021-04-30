@@ -123,10 +123,10 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="15sp"
                 android:background="@android:color/white"
-                android:hint="Enter Worker Mail Id">
+                android:hint="Enter Worker Address">
 
                 <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/worker_mail"
+                    android:id="@+id/worker_address"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="5dp"
@@ -139,10 +139,10 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="15sp"
                 android:background="@android:color/white"
-                android:hint="Enter Worker Mobile Number">
+                android:hint="Enter Worker Place">
 
                 <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/worker_mobile_number"
+                    android:id="@+id/worker_mobile_place"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="5dp"
@@ -171,10 +171,10 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="15sp"
                 android:background="@android:color/white"
-                android:hint="Enter Worker Adress">
+                android:hint="Enter Postal Code">
 
                 <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/worker_address"
+                    android:id="@+id/worker_postalcode"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="5dp"
