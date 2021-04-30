@@ -20,7 +20,7 @@ import static com.google.android.gms.common.internal.safeparcel.SafeParcelable.N
 public class UserProfileFragment extends Fragment {
 
     String phoneNumber,roledata;
-    TextView mobileNumber,role;
+    TextView mobileNumber,role,username,useraddress,useralternatemobilenumber,saveuser;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -35,6 +35,10 @@ public class UserProfileFragment extends Fragment {
         mobileNumber = v.findViewById(R.id.mobileNumber);
         role = v.findViewById(R.id.roledefine);
         role.setText("Your Role Is : "+roledata);
+        username=v.findViewById(R.id.user_name);
+        useraddress=v.findViewById(R.id.user_address);
+        saveuser=v.findViewById(R.id.save_user);
+        useralternatemobilenumber=v.findViewById(R.id.worker_user_alternatenumber);
         mobileNumber.setText(phoneNumber);
         v.findViewById(R.id.save_user).setOnClickListener(new View.OnClickListener() {
             @Override

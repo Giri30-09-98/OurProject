@@ -142,7 +142,7 @@
                 android:hint="Enter Worker Place">
 
                 <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/worker_mobile_place"
+                    android:id="@+id/worker_place"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="5dp"

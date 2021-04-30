@@ -25,7 +25,7 @@ import static com.google.android.gms.common.internal.safeparcel.SafeParcelable.N
 
 public class WorkerProfileFragment extends Fragment {
     String phoneNumber,roledata;
-    TextView mobileNumber,role;
+    TextView role,mobileNumber,workername,workeraddress,workerplace,workercategory,potsalcode,saveworker;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -42,6 +42,12 @@ public class WorkerProfileFragment extends Fragment {
         role.setText("Ypur Role Is : "+roledata);
 
         mobileNumber.setText(phoneNumber);
+        workername=v.findViewById(R.id.worker_name);
+        workeraddress=v.findViewById(R.id.worker_address);
+        workerplace=v.findViewById(R.id.worker_place);
+        workercategory=v.findViewById(R.id.worker_category);
+        potsalcode=v.findViewById(R.id.worker_postalcode);
+        saveworker=v.findViewById(R.id.save_worker);
 
         v.findViewById(R.id.buttonLogout).setOnClickListener(new View.OnClickListener() {
             @Override
