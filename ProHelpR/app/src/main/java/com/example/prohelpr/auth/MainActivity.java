@@ -115,6 +115,7 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
 
+            
         }
 
        /* if (FirebaseAuth.getInstance().getCurrentUser() != null) {
