@@ -9,13 +9,13 @@
     tools:context=".SplashActivity">
 
     <ImageView
+        android:id="@+id/logo"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/logo"
+        android:layout_marginTop="300dp"
         android:src="@drawable/logo"
-         android:layout_marginTop="300dp"
 
-         />
+        />
 
 </LinearLayout>
 
