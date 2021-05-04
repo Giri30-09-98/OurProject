@@ -6,12 +6,10 @@
     tools:context=".users.UserHomeFragment">
 
     <!-- TODO: Update blank fragment layout -->
-    <TextView
+
+    <androidx.recyclerview.widget.RecyclerView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="User Home"
-        android:gravity="center"
-        android:textSize="30dp"
+        android:id="@+id/w_b_recycler"
         />
-
 </FrameLayout>
