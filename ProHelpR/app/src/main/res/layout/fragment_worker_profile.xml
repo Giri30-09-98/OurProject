@@ -108,6 +108,7 @@
                     style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+<<<<<<< HEAD
                     android:layout_marginTop="15sp"
                     android:background="@android:color/white"
                     android:hint="Enter Worker Name">
@@ -122,12 +123,28 @@
 
                 <com.google.android.material.textfield.TextInputLayout
                     style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+=======
+                    android:layout_marginTop="5dp"
+                    android:singleLine="true" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15sp"
+                android:background="@android:color/white"
+                android:hint="Enter Worker Mobile Number">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/worker_mobilenumber"
+>>>>>>> 99084f4202b7a8f310f0fc757bfe699a1f6d85a4
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="15sp"
                     android:background="@android:color/white"
                     android:hint="Enter Worker Number">
 
+<<<<<<< HEAD
                     <com.google.android.material.textfield.TextInputEditText
                         android:id="@+id/worker_number"
                         android:layout_width="match_parent"
@@ -140,12 +157,25 @@
 
                 <com.google.android.material.textfield.TextInputLayout
                     style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+=======
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15sp"
+                android:background="@android:color/white"
+                android:hint="Enter Worker Address">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/worker_address"
+>>>>>>> 99084f4202b7a8f310f0fc757bfe699a1f6d85a4
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="15sp"
                     android:background="@android:color/white"
                     android:hint="Enter Worker Mail">
 
+<<<<<<< HEAD
                     <com.google.android.material.textfield.TextInputEditText
                         android:id="@+id/worker_mail"
                         android:layout_width="match_parent"
@@ -189,6 +219,18 @@
 
                 <Spinner
                     android:id="@+id/worker_category"
+=======
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15sp"
+                android:background="@android:color/white"
+                android:hint="Enter Worker Place">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/worker_place"
+>>>>>>> 99084f4202b7a8f310f0fc757bfe699a1f6d85a4
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
                     android:layout_marginTop="15dp"
@@ -204,6 +246,7 @@
                     android:background="@android:color/white"
                     android:hint="Enter Postal Code">
 
+<<<<<<< HEAD
                     <com.google.android.material.textfield.TextInputEditText
                         android:id="@+id/worker_postalcode"
                         android:layout_width="match_parent"
@@ -227,6 +270,36 @@
                         android:layout_marginTop="5dp"
                         android:singleLine="true" />
                 </com.google.android.material.textfield.TextInputLayout>
+=======
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15sp"
+                android:background="@android:color/white"
+                android:hint="Enter Worker Category">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/worker_category"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:singleLine="true" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/save_worker"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_weight="5"
+                android:backgroundTint="#04A10A"
+                android:fontFamily="serif"
+                android:text="Save Worker"
+                android:textColor="#FFFFFF"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+>>>>>>> 99084f4202b7a8f310f0fc757bfe699a1f6d85a4
 
                 <Spinner
                     android:id="@+id/worker_status"

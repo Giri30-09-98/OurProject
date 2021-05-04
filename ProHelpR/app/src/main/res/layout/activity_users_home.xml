@@ -8,13 +8,16 @@
     android:orientation="vertical"
     tools:context=".users.UsersHome">
 
+
     <FrameLayout
         android:id="@+id/flFragment"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="0.9"
         android:layout_marginBottom="5dp"
-        />
+        android:layout_weight="0.9" >
+
+
+    </FrameLayout>
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottomNavigationView"
@@ -22,10 +25,11 @@
         android:layout_height="0dp"
         android:layout_weight="0.1"
         android:background="?android:attr/windowBackground"
-        app:itemBackground="@color/colorPrimaryDark"
         android:foreground="?attr/selectableItemBackground"
+        app:itemBackground="@color/colorPrimaryDark"
         app:itemIconTint="@android:color/white"
         app:itemTextColor="@android:color/white"
-        app:menu="@menu/usermenu"/>
+        app:menu="@menu/usermenu" />
+
 
 </LinearLayout>

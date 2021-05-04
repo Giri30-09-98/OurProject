@@ -7,9 +7,19 @@
 
     <!-- TODO: Update blank fragment layout -->
 
+<<<<<<< HEAD
     <androidx.recyclerview.widget.RecyclerView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:id="@+id/w_b_recycler"
         />
+=======
+    <Spinner
+        android:id="@+id/user_home_spinner"
+        android:layout_width="match_parent"
+        android:entries="@array/Categories"
+        android:layout_height="50sp"
+        android:layout_gravity="top"/>
+
+>>>>>>> 99084f4202b7a8f310f0fc757bfe699a1f6d85a4
 </FrameLayout>

@@ -2,6 +2,7 @@
     <string name="app_name">ProHelpR</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+<<<<<<< HEAD
     <string name="Category">Category</string>
     <string-array name="Category">
         <item>Select Your Category</item>
@@ -18,5 +19,16 @@
         <item>Avliable</item>
         <item>Not Avliable</item>
 
+=======
+
+    <string-array name="Categories">
+    <item>Carpentry</item>
+    <item>Plumbing</item>
+    <item>MechanicWorks</item>
+    <item>Clothing</item>
+    <item>Masonry</item>
+    <item>ElectricWorks</item>
+    <item>Cleaning</item>
+>>>>>>> 99084f4202b7a8f310f0fc757bfe699a1f6d85a4
     </string-array>
 </resources>

@@ -41,7 +41,10 @@ dependencies {
     implementation 'com.google.firebase:firebase-core:18.0.3'
     implementation 'androidx.legacy:legacy-support-v4:1.0.0'
     implementation 'com.google.firebase:firebase-database:19.7.0'
+<<<<<<< HEAD
     implementation 'androidx.recyclerview:recyclerview:1.2.0'
+=======
+>>>>>>> 99084f4202b7a8f310f0fc757bfe699a1f6d85a4
 
     testImplementation 'junit:junit:4.+'
     androidTestImplementation 'androidx.test.ext:junit:1.1.2'
