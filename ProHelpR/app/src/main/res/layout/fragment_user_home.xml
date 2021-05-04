@@ -12,6 +12,6 @@
         android:layout_width="match_parent"
         android:entries="@array/Categories"
         android:layout_height="50sp"
-        android:layout_gravity="center"/>
+        android:layout_gravity="top"/>
 
 </FrameLayout>
