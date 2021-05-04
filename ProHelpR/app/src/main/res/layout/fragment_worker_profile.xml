@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -10,6 +10,9 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
+
+
+        -
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -66,6 +69,9 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
+
+            -
+
             <LinearLayout
                 android:id="@+id/registerworkerview"
                 android:layout_width="match_parent"
@@ -86,6 +92,9 @@
                     android:textColor="#FFFFFF"
                     android:textSize="20sp" />
 
+
+                -
+
                 <com.google.android.material.textfield.TextInputLayout
                     style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                     android:layout_width="match_parent"
@@ -99,16 +108,19 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="5dp"
+                        android:focusableInTouchMode="false"
                         android:singleLine="true"
-                        android:textIsSelectable="false"
-                        android:focusableInTouchMode="false"/>
+                        android:textIsSelectable="false" />
+
                 </com.google.android.material.textfield.TextInputLayout>
+
+
+                -
 
                 <com.google.android.material.textfield.TextInputLayout
                     style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-<<<<<<< HEAD
                     android:layout_marginTop="15sp"
                     android:background="@android:color/white"
                     android:hint="Enter Worker Name">
@@ -119,70 +131,53 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="5dp"
                         android:singleLine="true" />
+
                 </com.google.android.material.textfield.TextInputLayout>
+
+
+                -
 
                 <com.google.android.material.textfield.TextInputLayout
                     style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-=======
-                    android:layout_marginTop="5dp"
-                    android:singleLine="true" />
-            </com.google.android.material.textfield.TextInputLayout>
-            <com.google.android.material.textfield.TextInputLayout
-                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="15sp"
-                android:background="@android:color/white"
-                android:hint="Enter Worker Mobile Number">
-
-                <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/worker_mobilenumber"
->>>>>>> 99084f4202b7a8f310f0fc757bfe699a1f6d85a4
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="15sp"
                     android:background="@android:color/white"
                     android:hint="Enter Worker Number">
 
-<<<<<<< HEAD
                     <com.google.android.material.textfield.TextInputEditText
                         android:id="@+id/worker_number"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="5dp"
+                        android:focusableInTouchMode="false"
                         android:singleLine="true"
-                        android:textIsSelectable="false"
-                        android:focusableInTouchMode="false"/>
+                        android:textIsSelectable="false" />
+
                 </com.google.android.material.textfield.TextInputLayout>
+
+
+                -
 
                 <com.google.android.material.textfield.TextInputLayout
                     style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-=======
-            <com.google.android.material.textfield.TextInputLayout
-                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="15sp"
-                android:background="@android:color/white"
-                android:hint="Enter Worker Address">
-
-                <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/worker_address"
->>>>>>> 99084f4202b7a8f310f0fc757bfe699a1f6d85a4
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="15sp"
                     android:background="@android:color/white"
                     android:hint="Enter Worker Mail">
 
-<<<<<<< HEAD
                     <com.google.android.material.textfield.TextInputEditText
                         android:id="@+id/worker_mail"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="5dp"
                         android:singleLine="true" />
+
                 </com.google.android.material.textfield.TextInputLayout>
+
+
+                -
 
                 <com.google.android.material.textfield.TextInputLayout
                     style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
@@ -198,7 +193,11 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="5dp"
                         android:singleLine="true" />
+
                 </com.google.android.material.textfield.TextInputLayout>
+
+
+                -
 
                 <com.google.android.material.textfield.TextInputLayout
                     style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
@@ -214,29 +213,19 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="5dp"
                         android:singleLine="true" />
-                </com.google.android.material.textfield.TextInputLayout>
 
+                </com.google.android.material.textfield.TextInputLayout>
 
                 <Spinner
                     android:id="@+id/worker_category"
-=======
-            <com.google.android.material.textfield.TextInputLayout
-                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="15sp"
-                android:background="@android:color/white"
-                android:hint="Enter Worker Place">
-
-                <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/worker_place"
->>>>>>> 99084f4202b7a8f310f0fc757bfe699a1f6d85a4
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
                     android:layout_marginTop="15dp"
                     android:background="@drawable/button_shape"
                     android:entries="@array/Category" />
 
+
+                -
 
                 <com.google.android.material.textfield.TextInputLayout
                     style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
@@ -246,14 +235,17 @@
                     android:background="@android:color/white"
                     android:hint="Enter Postal Code">
 
-<<<<<<< HEAD
                     <com.google.android.material.textfield.TextInputEditText
                         android:id="@+id/worker_postalcode"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="5dp"
                         android:singleLine="true" />
+
                 </com.google.android.material.textfield.TextInputLayout>
+
+
+                -
 
                 <com.google.android.material.textfield.TextInputLayout
                     style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
@@ -269,37 +261,8 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="5dp"
                         android:singleLine="true" />
-                </com.google.android.material.textfield.TextInputLayout>
-=======
-            <com.google.android.material.textfield.TextInputLayout
-                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="15sp"
-                android:background="@android:color/white"
-                android:hint="Enter Worker Category">
 
-                <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/worker_category"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="5dp"
-                    android:singleLine="true" />
-            </com.google.android.material.textfield.TextInputLayout>
-            <com.google.android.material.button.MaterialButton
-                android:id="@+id/save_worker"
-                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:layout_weight="5"
-                android:backgroundTint="#04A10A"
-                android:fontFamily="serif"
-                android:text="Save Worker"
-                android:textColor="#FFFFFF"
-                android:textSize="17sp"
-                android:textStyle="bold" />
->>>>>>> 99084f4202b7a8f310f0fc757bfe699a1f6d85a4
+                </com.google.android.material.textfield.TextInputLayout>
 
                 <Spinner
                     android:id="@+id/worker_status"
@@ -322,15 +285,16 @@
                     android:id="@+id/savingstatus"
                     android:layout_width="match_parent"
                     android:layout_height="75dp"
-                    android:background="@drawable/button_shape"
                     android:layout_marginTop="20dp"
+                    android:layout_marginBottom="30dp"
+                    android:background="@drawable/button_shape"
                     android:gravity="center"
                     android:text="Your Result Will Display Here"
                     android:textColor="#989393"
-                    android:textSize="20sp"
-                    android:layout_marginBottom="30dp"/>
+                    android:textSize="20sp" />
 
             </LinearLayout>
+
         </ScrollView>
 
     </LinearLayout>
