@@ -2,65 +2,85 @@ package com.example.prohelpr.users;
 
 import android.os.Bundle;
 
+import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
+import android.widget.Toast;
 
 import com.example.prohelpr.R;
+import com.example.prohelpr.models.Worker;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
 
-/**
- * A simple {@link Fragment} subclass.
- * Use the {@link UserHomeFragment#newInstance} factory method to
- * create an instance of this fragment.
- */
+import java.util.ArrayList;
+
+
 public class UserHomeFragment extends Fragment {
+    RecyclerView recyclerView;
+    DatabaseReference databaseReference;
+    User_home_design user_home_design;
+    user_home_design_adapter adapter;
+    ArrayList<Worker> list;
+    Button v_btn;
 
-    // TODO: Rename parameter arguments, choose names that match
-    // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
-    private static final String ARG_PARAM1 = "param1";
-    private static final String ARG_PARAM2 = "param2";
-
-    // TODO: Rename and change types of parameters
-    private String mParam1;
-    private String mParam2;
 
     public UserHomeFragment() {
         // Required empty public constructor
     }
 
-    /**
-     * Use this factory method to create a new instance of
-     * this fragment using the provided parameters.
-     *
-     * @param param1 Parameter 1.
-     * @param param2 Parameter 2.
-     * @return A new instance of fragment UserHomeFragment.
-     */
-    // TODO: Rename and change types and number of parameters
-    public static UserHomeFragment newInstance(String param1, String param2) {
-        UserHomeFragment fragment = new UserHomeFragment();
-        Bundle args = new Bundle();
-        args.putString(ARG_PARAM1, param1);
-        args.putString(ARG_PARAM2, param2);
-        fragment.setArguments(args);
-        return fragment;
-    }
-
-    @Override
-    public void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        if (getArguments() != null) {
-            mParam1 = getArguments().getString(ARG_PARAM1);
-            mParam2 = getArguments().getString(ARG_PARAM2);
-        }
-    }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
+        /*  recyclerView=recyclerView.findViewById(R.id.w_b_recycler);*/
+
+
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_user_home, container, false);
+        View vi = inflater.inflate(R.layout.fragment_user_home, container, false);
+        recyclerView = vi.findViewById(R.id.w_b_recycler);
+        v_btn = vi.findViewById(R.id.save_btn);
+        databaseReference = FirebaseDatabase.getInstance().getReference("WorkersDatabase");
+        v_btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Toast.makeText(getContext(), "ding", Toast.LENGTH_SHORT).show();
+                list = new ArrayList<>();
+
+                databaseReference.addValueEventListener(new ValueEventListener() {
+                    @Override
+                    public void onDataChange(@NonNull DataSnapshot snapshot) {
+                        int a=0;
+                        for (DataSnapshot dataSnapshot : snapshot.getChildren()) {
+                          Worker worker = dataSnapshot.getValue(Worker.class);
+                            list.add(worker);
+                            Toast.makeText(getContext(), "Total"+list.size(),Toast.LENGTH_SHORT).show();
+                          //  Log.i("worker",list.get(a).getName());
+                        }
+                        adapter = new user_home_design_adapter(getContext(), list);
+                        recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
+                        recyclerView.setAdapter(adapter);
+                        // adapter.notifyDataSetChanged();
+                    }
+
+                    @Override
+                    public void onCancelled(@NonNull DatabaseError error) {
+
+                    }
+                });
+            }
+        });
+
+        return vi;
     }
 }

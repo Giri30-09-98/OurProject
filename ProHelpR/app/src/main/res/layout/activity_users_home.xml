@@ -20,7 +20,7 @@
     </FrameLayout>
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
-        android:id="@+id/bottomNavigationView"
+        android:id="@+id/u_bottomNavigationView"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="0.1"

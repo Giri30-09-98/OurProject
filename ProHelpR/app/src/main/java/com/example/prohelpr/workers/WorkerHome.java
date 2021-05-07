@@ -18,9 +18,9 @@ public class WorkerHome extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_worker_home);
 
-        BottomNavigationView navigation = (BottomNavigationView) findViewById(R.id.bottomNavigationView);
+        BottomNavigationView navigation = (BottomNavigationView) findViewById(R.id.w_bottomNavigationView);
         navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
-        loadFragment(new WorkerHomeFragment());
+       // loadFragment(new WorkerHomeFragment());
 
     }
 
