@@ -2,13 +2,12 @@ package com.example.prohelpr.models;
 
 public class Worker {
 
-    String Role,Name,Number,Mail,Address,Place,Category,PostalCode,Status,Amount;
+    String Role,Name,Number,Address,Place,Category,PostalCode,Status,Amount;
 
     public Worker(String role, String name, String number, String mail, String address, String place, String category, String postalCode, String status, String amount) {
         Role = role;
         Name = name;
         Number = number;
-        Mail = mail;
         Address = address;
         Place = place;
         Category = category;
@@ -41,13 +40,7 @@ public class Worker {
         Number = number;
     }
 
-    public String getMail() {
-        return Mail;
-    }
 
-    public void setMail(String mail) {
-        Mail = mail;
-    }
 
     public String getAddress() {
         return Address;

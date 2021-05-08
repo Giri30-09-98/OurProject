@@ -37,6 +37,30 @@ public class WorkersDatabase {
         this.w_address = w_address;
     }
 
+    public String getW_status() {
+        return w_status;
+    }
+
+    public void setW_status(String w_status) {
+        this.w_status = w_status;
+    }
+
+    public String getW_amount() {
+        return w_amount;
+    }
+
+    public void setW_amount(String w_amount) {
+        this.w_amount = w_amount;
+    }
+
+    public String getW_postalcode() {
+        return w_postalcode;
+    }
+
+    public void setW_postalcode(String w_postalcode) {
+        this.w_postalcode = w_postalcode;
+    }
+
     public String getW_place() {
         return w_place;
     }
@@ -53,20 +77,26 @@ public class WorkersDatabase {
         this.w_category = w_category;
     }
 
+    public WorkersDatabase(String w_name, String role, String w_contact, String w_address, String w_status, String w_amount, String w_postalcode, String w_place, String w_category) {
+        this.w_name = w_name;
+        this.role = role;
+        this.w_contact = w_contact;
+        this.w_address = w_address;
+        this.w_status = w_status;
+        this.w_amount = w_amount;
+        this.w_postalcode = w_postalcode;
+        this.w_place = w_place;
+        this.w_category = w_category;
+    }
+
     String w_address;
+    String w_status;
+    String w_amount;
+    String w_postalcode;
     String w_place;
     String w_category;
     public WorkersDatabase(){
 
-    }
-
-    public WorkersDatabase(String w_name,String role,String w_contact,String w_address,String w_category,String w_place ){
-        this.w_name=w_name;
-        this.w_contact=w_contact;
-       this.w_address=w_address;
-       this.role=role;
-        this.w_category=w_category;
-        this.w_place=w_place;
     }
 
 }

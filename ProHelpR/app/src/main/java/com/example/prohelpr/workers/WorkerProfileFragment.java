@@ -31,11 +31,12 @@ import static com.google.android.gms.common.internal.safeparcel.SafeParcelable.N
 
 
 public class WorkerProfileFragment extends Fragment {
+    List<WorkersDatabase> list;
     String phoneNumber, roledata;
 
     TextView role, mobileNumber, savingstatus;
 
-    TextInputEditText workerrole, workername, workernumber, workeraddress, workerplace, workermail, workerpostalcode, workeramount;
+    TextInputEditText workerrole, workername, workernumber, workeraddress, workerplace, workerpostalcode, workeramount;
     MaterialButton saveworker;
     Spinner workercategory, workerstatus;
 
@@ -46,7 +47,9 @@ public class WorkerProfileFragment extends Fragment {
 
     DatabaseReference reference;
     WorkersDatabase workersDatabase;
-    List<WorkersDatabase> list;
+    public WorkerProfileFragment(){
+
+    }
 
 
     @Override
@@ -73,7 +76,7 @@ public class WorkerProfileFragment extends Fragment {
         workerrole = v.findViewById(R.id.role_name);
         workername = v.findViewById(R.id.worker_name);
         workernumber = v.findViewById(R.id.worker_number);
-        workermail = v.findViewById(R.id.worker_mail);
+
         workeraddress = v.findViewById(R.id.worker_address);
         workerplace = v.findViewById(R.id.worker_place);
         workercategory = v.findViewById(R.id.worker_category);
@@ -118,7 +121,7 @@ public class WorkerProfileFragment extends Fragment {
                 String w_role = workerrole.getText().toString();
                 String w_name = workername.getText().toString();
                 String w_number = workernumber.getText().toString();
-                String w_mail = workermail.getText().toString();
+
                 String w_address = workeraddress.getText().toString();
                 String w_place = workerplace.getText().toString();
                 String w_pcode = workerpostalcode.getText().toString();
@@ -126,7 +129,7 @@ public class WorkerProfileFragment extends Fragment {
                 String w_staus = workerstatus.getSelectedItem().toString();
                 String w_amount = workeramount.getText().toString();
 
-                Toast.makeText(getContext(), "" + w_role + w_name + w_number + w_mail + w_address + w_place + w_pcode + w_category + w_staus, Toast.LENGTH_SHORT).show();
+                Toast.makeText(getContext(), "" + w_role + w_name + w_number + w_address + w_place + w_pcode + w_category + w_staus, Toast.LENGTH_SHORT).show();
 
                 String name = workername.getText().toString();
                 String roles = role.getText().toString();
@@ -134,8 +137,12 @@ public class WorkerProfileFragment extends Fragment {
                 String address = workeraddress.getText().toString();
                 //String category=w_category.getText().toString();
                 String place = workerplace.getText().toString();
+                String status = workerstatus.getSelectedItem().toString();
+                String pcode=workerpostalcode.getText().toString();
+                String amount=workeramount.getText().toString();
 
-                WorkersDatabase workersDatabase = new WorkersDatabase(name, roles, contact, address, w_category, place);
+
+                WorkersDatabase workersDatabase = new WorkersDatabase(name, roles, contact, address, w_category, place,pcode,status,amount);
                 list.add(workersDatabase);
                 reference.push().setValue(list).addOnSuccessListener(new OnSuccessListener<Void>() {
                     @Override

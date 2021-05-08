@@ -1,6 +1,7 @@
 {
   "project_info": {
     "project_number": "28909069071",
+    "firebase_url": "https://prohelpr-default-rtdb.firebaseio.com",
     "project_id": "prohelpr",
     "storage_bucket": "prohelpr.appspot.com"
   },
@@ -13,6 +14,22 @@
         }
       },
       "oauth_client": [
+        {
+          "client_id": "28909069071-5nsoklv1kvog1m2go7opc2h9ovs352iq.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.prohelpr",
+            "certificate_hash": "2f365092c60086024f41fd08589aa5074d4ddf0d"
+          }
+        },
+        {
+          "client_id": "28909069071-odlm15530io77n4ce8ll7t1qtatdgie1.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.prohelpr",
+            "certificate_hash": "1c7393ed4a357676b3a89512f7b70e7849b2e105"
+          }
+        },
         {
           "client_id": "28909069071-8vs2mpqaaj9lehob57j0t9i2v7pukrqb.apps.googleusercontent.com",
           "client_type": 3
