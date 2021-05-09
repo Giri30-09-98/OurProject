@@ -4,7 +4,7 @@ public class Worker {
 
     String Role,Name,Number,Address,Place,Category,PostalCode,Status,Amount;
 
-    public Worker(String role, String name, String number, String mail, String address, String place, String category, String postalCode, String status, String amount) {
+    public Worker(String role, String name, String number,  String address, String place, String category, String postalCode, String status, String amount) {
         Role = role;
         Name = name;
         Number = number;

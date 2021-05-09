@@ -142,7 +142,7 @@ public class WorkerProfileFragment extends Fragment {
                 String amount=workeramount.getText().toString();
 
 
-                WorkersDatabase workersDatabase = new WorkersDatabase(name, roles, contact, address, w_category, place,pcode,status,amount);
+                WorkersDatabase workersDatabase = new WorkersDatabase(roles,name,contact,address,place,w_category,pcode,amount,status);
                 list.add(workersDatabase);
                 reference.push().setValue(list).addOnSuccessListener(new OnSuccessListener<Void>() {
                     @Override

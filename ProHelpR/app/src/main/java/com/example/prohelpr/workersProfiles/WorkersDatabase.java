@@ -1,9 +1,20 @@
 package com.example.prohelpr.workersProfiles;
 
 public class WorkersDatabase {
-    String w_name;
+
     String role;
+    String w_name;
     String w_contact;
+    String w_address;
+    String w_place;
+    String w_category;
+    String w_postalcode;
+    String w_amount;
+    String w_status;
+
+
+
+
 
     public String getW_name() {
         return w_name;
@@ -77,7 +88,7 @@ public class WorkersDatabase {
         this.w_category = w_category;
     }
 
-    public WorkersDatabase(String w_name, String role, String w_contact, String w_address, String w_status, String w_amount, String w_postalcode, String w_place, String w_category) {
+    public WorkersDatabase(String role,String w_name,String w_contact,String w_address,String w_place,String w_category,String w_postalcode,String w_amount,String w_status) {
         this.w_name = w_name;
         this.role = role;
         this.w_contact = w_contact;
@@ -89,12 +100,7 @@ public class WorkersDatabase {
         this.w_category = w_category;
     }
 
-    String w_address;
-    String w_status;
-    String w_amount;
-    String w_postalcode;
-    String w_place;
-    String w_category;
+
     public WorkersDatabase(){
 
     }
