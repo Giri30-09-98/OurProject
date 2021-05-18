@@ -21,6 +21,7 @@
 
 
     <string-array name="Categories">
+    <item>Select Your Category Here</item>
     <item>Carpentry</item>
     <item>Plumbing</item>
     <item>MechanicWorks</item>
