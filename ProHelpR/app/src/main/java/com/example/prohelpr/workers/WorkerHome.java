@@ -5,8 +5,10 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentTransaction;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
+import android.widget.Toast;
 
 import com.example.prohelpr.R;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
@@ -17,6 +19,9 @@ public class WorkerHome extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_worker_home);
+        Intent intent=getIntent();
+        String string=intent.getStringExtra("key");
+        Toast.makeText(this, string, Toast.LENGTH_SHORT).show();
 
         BottomNavigationView navigation = (BottomNavigationView) findViewById(R.id.w_bottomNavigationView);
         navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);

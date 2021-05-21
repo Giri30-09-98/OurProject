@@ -26,7 +26,7 @@ public class UsersHome extends AppCompatActivity implements AdapterView.OnItemSe
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_users_home);
-       // Spinner spinner=findViewById(R.id.user_home_spinner);
+        // Spinner spinner=findViewById(R.id.user_home_spinner);
 
         BottomNavigationView navigation = (BottomNavigationView) findViewById(R.id.u_bottomNavigationView);
         navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);

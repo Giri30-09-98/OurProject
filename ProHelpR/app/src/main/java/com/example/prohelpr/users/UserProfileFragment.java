@@ -1,6 +1,7 @@
 package com.example.prohelpr.users;
 
 import android.content.Context;
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 
@@ -13,6 +14,8 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.prohelpr.R;
+import com.example.prohelpr.auth.MainActivity;
+import com.google.firebase.auth.FirebaseAuth;
 
 import static com.google.android.gms.common.internal.safeparcel.SafeParcelable.NULL;
 
@@ -40,6 +43,16 @@ public class UserProfileFragment extends Fragment {
         saveuser=v.findViewById(R.id.save_user);
         useralternatemobilenumber=v.findViewById(R.id.worker_user_alternatenumber);
         mobileNumber.setText(phoneNumber);
+        v.findViewById(R.id.buttonLogout).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                FirebaseAuth.getInstance().signOut();
+                Intent intent=new Intent(getActivity(), MainActivity.class);
+                intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
+                startActivity(intent);
+
+            }
+        });
         v.findViewById(R.id.save_user).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

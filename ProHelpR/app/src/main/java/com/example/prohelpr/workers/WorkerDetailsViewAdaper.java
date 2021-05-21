@@ -1,9 +1,11 @@
 package com.example.prohelpr.workers;
 
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -11,6 +13,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.prohelpr.R;
 import com.example.prohelpr.users.UserHomeFragment;
+import com.google.firebase.auth.FirebaseAuth;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -44,6 +47,18 @@ public class WorkerDetailsViewAdaper extends RecyclerView.Adapter<WorkerDetailsV
         holder.obj_tv_workerNumberPincode.setText(models.get(position).getW_pcode());
         holder.obj_tv_Charge.setText(models.get(position).getW_amount());
         holder.obj_tv_availbility.setText(models.get(position).getW_staus());
+        holder.booking.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String name= models.get(position).getW_name();
+
+                Intent intent=new Intent(ctx,WorkerHome.class);
+                intent.putExtra("key",name);
+                ctx.startActivity(intent);
+
+            }
+
+        });
 
 
 
@@ -68,7 +83,7 @@ public class WorkerDetailsViewAdaper extends RecyclerView.Adapter<WorkerDetailsV
     public class WorkerDetailsViewHolder extends RecyclerView.ViewHolder {
         TextView obj_tv_workerRole,obj_tv_workerName, obj_tv_workerNumber,obj_tv_workerMail, obj_tv_workeraddress, obj_tv_availbility, obj_tv_worker_place,
                 obj_tv_workerChatogory,obj_tv_workerNumberPincode, obj_tv_Charge;
-        ;
+        Button booking,cancel;
 
 
         public WorkerDetailsViewHolder(@NonNull View itemView) {
@@ -83,6 +98,8 @@ public class WorkerDetailsViewAdaper extends RecyclerView.Adapter<WorkerDetailsV
             obj_tv_workerNumberPincode = itemView.findViewById(R.id.tv_workerPostalCode);
             obj_tv_Charge = itemView.findViewById(R.id.tv_chargeOfWork);
             obj_tv_availbility = itemView.findViewById(R.id.tv_avilablity);
+            booking=itemView.findViewById(R.id.book);
+            cancel=itemView.findViewById(R.id.cancel);
         }
     }
 }
