@@ -54,7 +54,7 @@ public class WorkerProfileFragment extends Fragment {
         mobileNumber = v.findViewById(R.id.mobileNumber);
         role = v.findViewById(R.id.roledefine);
 
-        role.setText("Ypur Role Is : " + roledata);
+        role.setText("Your Role Is : " + roledata);
 
         role.setText("Your Role Is : " + roledata);
 

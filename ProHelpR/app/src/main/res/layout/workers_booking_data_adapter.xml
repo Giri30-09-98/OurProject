@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:layout_margin="10dp"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <!--  String worker_role;
+        String worker_name;
+        String worker_number;
+        String worker_mail;
+        String worker_address;
+        String worker_plase;
+        String worker_catergory;
+        String worker_postalCode;
+        String worker_chargeOfWork;
+        String worker_avalbiltyStatus;-->
+    <TextView
+        android:id="@+id/w_name_booking"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:text="TextView" />
+   <TextView
+    android:id="@+id/category_booking"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:textStyle="bold"
+    android:text="TextView" />
+
+
+
+    <TextView
+        android:id="@+id/charge_booking"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:text="TextView" />
+
+
+
+    <TextView
+        android:id="@+id/contact_booking"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:text="TextView" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Save"
+            android:id="@+id/save_booking"
+            android:textSize="20dp"
+            android:layout_margin="10dp"/>
+        <!--<Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cancel"
+            android:id="@+id/cancel_booking"
+            android:textSize="20dp"
+            android:layout_margin="10dp"/>-->
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10sp"
+        android:background="#000"
+        android:layout_margin="10dp"
+        />
+</LinearLayout>

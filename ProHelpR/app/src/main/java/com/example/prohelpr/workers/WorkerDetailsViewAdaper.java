@@ -51,10 +51,21 @@ public class WorkerDetailsViewAdaper extends RecyclerView.Adapter<WorkerDetailsV
             @Override
             public void onClick(View v) {
                 String name= models.get(position).getW_name();
+                String category=models.get(position).getW_category();
+                String charge=models.get(position).getW_amount();
+                String w_contact=models.get(position).getW_number();
+                String u_name="giri";
 
-                Intent intent=new Intent(ctx,WorkerHome.class);
-                intent.putExtra("key",name);
+
+                Intent intent=new Intent(ctx,worker_booking_data.class);
+                intent.putExtra("key_w_name",name);
+                intent.putExtra("key_w_category",category);
+                intent.putExtra("key_w_amount",charge);
+                intent.putExtra("key_w_contact",w_contact);
+                intent.putExtra("key_name",u_name);
+
                 ctx.startActivity(intent);
+
 
             }
 
@@ -99,7 +110,7 @@ public class WorkerDetailsViewAdaper extends RecyclerView.Adapter<WorkerDetailsV
             obj_tv_Charge = itemView.findViewById(R.id.tv_chargeOfWork);
             obj_tv_availbility = itemView.findViewById(R.id.tv_avilablity);
             booking=itemView.findViewById(R.id.book);
-            cancel=itemView.findViewById(R.id.cancel);
+
         }
     }
 }

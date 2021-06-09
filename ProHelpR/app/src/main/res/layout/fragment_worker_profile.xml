@@ -3,13 +3,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#88C2EF"
     tools:context=".workers.WorkerProfileFragment">
 
     <!-- TODO: Update blank fragment layout -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="#70C3CD"
+        android:background="#94BFE1"
         android:orientation="vertical">
 
 
@@ -19,6 +20,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
+            android:background="#88C2EF"
             android:orientation="vertical">
 
             <ImageView
@@ -68,7 +70,8 @@
 
         <ScrollView
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            android:background="#9AC9ED">
 
 
 
@@ -131,6 +134,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="2dp"
+                        android:textColor="@android:color/darker_gray"
                         android:singleLine="true" />
 
                 </com.google.android.material.textfield.TextInputLayout>
@@ -220,8 +224,8 @@
                 <Spinner
                     android:id="@+id/worker_category"
                     android:layout_width="match_parent"
-                    android:layout_height="50dp"
-                    android:layout_marginTop="5dp"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="2dp"
                     android:background="@android:color/darker_gray"
                     android:entries="@array/Category" />
 
@@ -268,8 +272,8 @@
                 <Spinner
                     android:id="@+id/worker_status"
                     android:layout_width="match_parent"
-                    android:layout_height="50dp"
-                    android:layout_marginTop="5dp"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="2dp"
                     android:background="@android:color/darker_gray"
                     android:entries="@array/status" />
 
@@ -277,21 +281,21 @@
                     android:id="@+id/save_worker"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="5dp"
+                    android:layout_marginTop="2dp"
                     android:backgroundTint="#298505"
                     android:text="Save Worker"
                     android:textColor="@android:color/white" />
 
-              <TextView
+                <TextView
                     android:id="@+id/savingstatus"
                     android:layout_width="match_parent"
-                    android:layout_height="75dp"
-                    android:layout_marginTop="20dp"
-                    android:layout_marginBottom="30dp"
+                    android:layout_height="55dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="20dp"
                     android:background="@drawable/button_shape"
                     android:gravity="center"
                     android:text="Your Result Will Display Here"
-                    android:textColor="#989393"
+                    android:textColor="@android:color/darker_gray"
                     android:textSize="20sp" />
 
             </LinearLayout>

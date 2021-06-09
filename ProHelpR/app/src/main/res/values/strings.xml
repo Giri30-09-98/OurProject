@@ -21,14 +21,14 @@
 
 
     <string-array name="Categories">
-    <item>Select Your Category Here</item>
-    <item>Carpentry</item>
-    <item>Plumbing</item>
-    <item>MechanicWorks</item>
-    <item>Clothing</item>
-    <item>Masonry</item>
-    <item>ElectricWorks</item>
-    <item>Cleaning</item>
+        <item>Select Your Category Here</item>
+        <item>Carpentry</item>
+        <item>Plumbing</item>
+       <!-- <item>MechanicWorks</item>-->
+        <item>Clothing</item>
+        <item>Masonry</item>
+        <item>Electric Works</item>
+        <item>Cleaning</item>
 
     </string-array>
 

@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:tools="http://schemas.android.com/tools"
-    android:background="@android:color/white"
+    android:background="#FDFFF8"
     android:fitsSystemWindows="true"
     android:orientation="vertical"
     tools:context=".auth.VerifyPhoneActivity">
